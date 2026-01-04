@@ -1,0 +1,49 @@
+Pokusali smo uraditi za mnoge stranice ali koriste antibotove gdje nije moguce testirati i vecina stranica nema gresaka jedino sto ucitava kao gresku jeste kada stranica promjeni izgled pa ne moze da pronadje trazeno 
+
+BUG #1: Slike proizvoda se ne učitavaju
+
+Prioritet: Visok (High)
+Opis problema: Na početnoj stranici (Inventory), slike većine proizvoda nisu vidljive. Umjesto prave slike artikla, prikazuje se ikonica "slomljene slike" (broken image) sa psom. Ovo se dešava na svim proizvodima osim prvog.
+Koraci za reprodukciju:
+Ulogovati se u aplikaciju.
+Pogledati listu proizvoda.
+Očekivani rezultat: Pored svakog naziva proizvoda treba stajati njegova slika.
+Stvarni rezultat: Slike se ne učitavaju (src atribut vodi na grešku).
+BUG #2: Dugme "Add to Cart" ne radi za određene proizvode
+
+Prioritet: Kritičan (Critical)
+Opis problema: Kada pokušam dodati proizvod "Sauce Labs Bolt T-Shirt" u korpu, aplikacija ne reaguje. Iako kliknem dugme, broj na ikonici korpe se ne povećava.
+Koraci za reprodukciju:
+Naći proizvod "Sauce Labs Bolt T-Shirt".
+Kliknuti na dugme "Add to cart".
+Provjeriti stanje korpe.
+Očekivani rezultat: Proizvod se dodaje u korpu i brojač se povećava za 1.
+Stvarni rezultat: Proizvod se ne dodaje, korpa ostaje prazna.
+BUG #3: Nemoguće unijeti Prezime prilikom kupovine
+
+Prioritet: Visok (High)
+Opis problema: Na stranici za unos podataka (Checkout), polje "Last Name" je blokirano. Šta god da pokušam ukucati, tekst se odmah briše ili se uopšte ne pojavljuje. Zbog ovoga nije moguće završiti kupovinu.
+Koraci za reprodukciju:
+Otići na Checkout stranicu.
+Kliknuti na polje "Last Name".
+Pokušati unijeti tekst.
+Očekivani rezultat: Polje treba prihvatiti unos teksta.
+Stvarni rezultat: Unos teksta nije moguć.
+BUG #4: Sortiranje proizvoda ne radi (Z-A)
+
+Prioritet: Srednji (Medium)
+Opis problema: Filter za sortiranje proizvoda ne funkcioniše kada se odabere opcija "Name (Z to A)". Redoslijed proizvoda na ekranu ostaje isti kao i prije (A to Z).
+Koraci za reprodukciju:
+Kliknuti na filter u gornjem desnom uglu.
+Odabrati opciju "Name (Z to A)".
+Očekivani rezultat: Prvi proizvod na listi treba biti onaj čije ime počinje zadnjim slovom abecede.
+Stvarni rezultat: Redoslijed se ne mijenja.
+BUG #5: Link "About" u meniju ne radi
+
+Prioritet: Nizak (Low)
+Opis problema: Kada otvorim meni sa lijeve strane i kliknem na opciju "About", ništa se ne dešava ili me vodi na stranicu sa greškom, umjesto na oficijelnu stranicu kompanije.
+Koraci za reprodukciju:
+Otvoriti burger meni (tri crtice).
+Kliknuti na "About".
+Očekivani rezultat: Preusmjeravanje na saucelabs.com.
+Stvarni rezultat: Link je neispravan.

@@ -1,0 +1,1 @@
+prvo smo pokusali uraditi test za stranicu klix medjutim ima jak sistem gdje prepoznaje koristenje botova i sprecava nase radnje te smo promjenili izabrali drugu stranicu kao fpl pokusali smo promjeniti test  nije uspjevalo 
